@@ -42,6 +42,12 @@ input:focus{
 .navbar-nav li:last-child {
   border: 0;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: rgba(255,255,255,0.5) !important;
+}
 
 .logo {
   background-repeat: no-repeat;
@@ -115,6 +121,9 @@ input:focus{
   text-align: justify;
 }
 
+.calculadora-imc {
+  padding: 30px 0;
+}
 form .formata-campo {
     padding: 8px;
     border: 1px solid #565656;
@@ -182,7 +191,7 @@ mark:only-child{
   text-align: center;
 }
 
-h1:first-child{
+h1:first-child {
 	text-transform: uppercase;
 }
 p {

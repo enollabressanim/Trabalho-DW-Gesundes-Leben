@@ -78,41 +78,78 @@
 			<p>Utilizamos para o cálculo do IMC o peso da pessoa (massa) pela sua altura ao quadrado. A massa deve ser colocada em quilogramas (kg) e seu comprimento (altura) em metros. Portanto, sua expressão de cálculo é: <em>IMC = massa / (altura x altura)</em>. Um questionamento do IMC é que nem sempre seu resultado é exato, como nem sempre uma massa acima do IMC significa que está obesa, uma pessoa com muita massa muscular e pouca massa de gordura pode ter um elevado IMC (depende da sua altura) e pode não ser obesa.</p>
 			<p><a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank">Para mais informações sobre IMC clique neste link</a></p>
 		</div>
-		<div class="table-responsive">
-			<table class="table">
-				<tr>
-					<th>IMC</th>
-					<th>CLASSIFICAÇÃO</th>
-					<th>OBESIDADE (GRAU)</th>
-				</tr>
-				<tr>
-					<td>MENOR QUE 18,5</td>
-					<td>MAGREZA</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>ENTRE 18,5 E 24,9</td>
-					<td>NORMAL</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>ENTRE 25 E 29,9</td>
-					<td>SOBREPESO</td>
-					<td>I</td>
-				</tr>
-				<tr>
-					<td>ENTRE 30 E 39,9</td>
-					<td>OBESIDADE</td>
-					<td>II</td>
-				</tr>
-				<tr>
-					<td>MAIOR QUE 40</td>
-					<td>OBESIDADE GRAVE</td>
-					<td>III</td>
-				</tr>
-			</table>
+		<div class="container calculadora-imc">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Calcule seu IMC</h3>
+					<div class="input-group mb-3">
+					  <input type="number" id="peso" class="form-control" placeholder="Seu peso" aria-label="Seu peso" aria-describedby="basic-addon2" autocomplete="false">
+					  <div class="input-group-append">
+					    <span class="input-group-text" id="basic-addon2">kg</span>
+					  </div>
+					</div>
+					<div class="input-group mb-3">
+					  <input type="text" id="altura" class="form-control" placeholder="Sua altura" aria-label="Sua altura" aria-describedby="basic-addon2" autocomplete="false">
+					  <div class="input-group-append">
+					    <span class="input-group-text" id="basic-addon2">m</span>
+					  </div>
+					</div>
+					<button id="botao" class="btn btn-outline-success">Calcular IMC</button>
+					<div id="resultado"></div><br><br>
+					<script>
+						document.querySelector('#botao').addEventListener('click', function () {
+							var peso = document.querySelector('#peso').value;
+							var altura = document.querySelector('#altura').value;
+							if (peso == '' || altura == '') {
+								alert('Preencha todos os campos!');
+								return;
+							}
+							var imc = peso / (altura * altura);
+							var hr = document.createElement('hr');
+							$('#resultado').html('<hr><span>IMC: ' + imc.toFixed(2) + '</span>');
+						});
+					</script>
+				</div>
+				<div class="col-md-8">
+					<div class="table-responsive">
+						<table class="table">
+							<tr>
+								<th>IMC</th>
+								<th>CLASSIFICAÇÃO</th>
+								<th>OBESIDADE (GRAU)</th>
+							</tr>
+							<tr>
+								<td>MENOR QUE 18,5</td>
+								<td>MAGREZA</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>ENTRE 18,5 E 24,9</td>
+								<td>NORMAL</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>ENTRE 25 E 29,9</td>
+								<td>SOBREPESO</td>
+								<td>I</td>
+							</tr>
+							<tr>
+								<td>ENTRE 30 E 39,9</td>
+								<td>OBESIDADE</td>
+								<td>II</td>
+							</tr>
+							<tr>
+								<td>MAIOR QUE 40</td>
+								<td>OBESIDADE GRAVE</td>
+								<td>III</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
 	<footer>
 		<address>Desenvolvido por Enolla Cristine Bressanim, Gabriel Eilers Hiebert, <br>Hannely Thays Maske, Jackson Ricardo Riebe, Mab de Alencar Fraga.</address>
 		<div class="siga"><h3>Siga o Gesundes Leben</h3></div>
