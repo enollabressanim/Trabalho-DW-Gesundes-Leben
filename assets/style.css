@@ -168,9 +168,8 @@ footer {
   width: 125px;
 }
 
-/* com o tamanho de imagem o mapeamento não fica certo*/
 mark:only-child {
-  background-color: rgba(129, 165, 63, 0.36);
+  background-color: rgba(129, 165, 63, 0.15);
 }
 
 .table {
