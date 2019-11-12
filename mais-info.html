@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>FALE CONOSCO</title>
+	 <meta charset="utf-8">
+	 <meta name="description" content="Nutrição é um processo biológico em que os organismos (animais, fungos, vegetais e micro-organismos), utilizando-se de alimentos, assimilam nutrientes para a realização de suas funções vitais.">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <meta name="keywords" content="Nutrição, Saúde, Vida, Saudável, IMC, Corpo">
+	 <meta name="author" content="Enolla Cristine Bressanim, Gabriel Eilers Hiebert, Hannely Thays Maske, Jackson Ricardo Riebe, Mab de Alencar Fraga.">
+	 <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <script src="./bootstrap/jquery-3.3.1.slim.min.js"></script>
+  <script src="./bootstrap/popper.min.js"></script>
+  <script src="./bootstrap/bootstrap.min.js"></script>
+
+	 <link rel="stylesheet" type="text/css" href="./assets/style.css">
+	 <meta http-equiv="refresh" content="600000">
+</head>
+<body>
+  <div class="header-desktop">
+  	<header id="inicio">
+  		<div>
+  			<a href="index.html" title="Gesundes Leben"><img class="logo" alt="Logo do Gesundes Leben" src="./images/logotbl-2.png"></a>
+  			<img class="letra" alt="Gesundes Leben" src="./images/letra.png">
+  		</div>
+  	</header>
+  	<nav class="menu">
+     <ul>
+       <li><a href="index.html">INÍCIO</a></li>
+       <li class="dropdown"><a href="vida-saudavel.html">VIDA SAUDÁVEL</a> </li>
+       <li><a href="voce-e-seu-corpo.html">VOCÊ E SEU CORPO</a></li>
+       <li><a href="mais-info.html" class="active">FALE CONOSCO</a></li>
+     </ul> 
+    </nav>
+  </div>
+  <div class="header-mobile">
+    <nav class="navbar navbar-dark" style="background-color: #81a53f;">
+      <a class="navbar-brand" href="index.html"><img alt="Gesundes Leben" src="./images/letra.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vida-saudavel.html">VIDA SAUDÁVEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voce-e-seu-corpo.html">VOCÊ E SEU CORPO</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mais-info.html">FALE CONOSCO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+    <div class="tudo">
+    <h2>Mais Informações</h2>
+    <form>
+      <fieldset>
+        <div class="usuario">
+        <legend><b>Cadastre-se aqui para receber mais informações:</b></legend>
+        <label>Nome:</label><br> <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" size="60"><br>
+        <label>E-mail:</label><br> <input class="form-control" type="email" name="email" placeholder="Digite seu e-mail" size="60"><br>
+        <label>Senha:</label> <br><input class="form-control" type="password" name="senha" placeholder="Digite sua senha" size="25">
+        <br></div><br>
+        <label><b>Selecione o seu sexo:</b></label><br>
+        <input type="radio" name="sexo" value="Feminino">Feminino<br>
+         <input type="radio" name="sexo" value="Masculino">Masculino<br>
+         <input type="radio" name="sexo" value="Não comentar">Prefiro não responder<br>
+         <br>
+         <label><b>Selecione sua idade: </b></label><br>
+        <select class="form-control" name="idade">
+          <option value="Prefiro não responder" selected="selected">Prefiro não responder</option>
+          <option value="10-18" >10-18</option>
+          <option value="18-30" >18-30</option>
+          <option value="30-40" >30-40</option>
+          <option value="Acima de 40" >Acima de 40</option>
+        </select><br>
+        <br>
+         <label><b>Indique a quantidade de notícias mensais: </b></label><br>
+         <input class="form-control" type="number" name="numero-sorte" min="1" value="1">
+        <br><br>
+         <label><b>Qual sua cor favorita: </b></label><br>
+         <input type="color" name="cor">
+        <br><br>
+        <label><b>Indique seu continente:</b></label>
+        <input class="form-control" list="browsers">
+        <datalist id="browsers">
+          <option value="América do Norte">América do Norte</option>
+          <option value="América Central">América Central</option>
+          <option value="América do Sul">América do Sul</option>
+          <option value="Europa">Europa</option>
+          <option value="Ásia">Ásia</option>
+          <option value="África">África</option>
+          <option value="Oceanía">Oceanía</option>
+        </datalist><br>
+        <br>
+         <label><b>Preferências de informações:</b></label>
+         <br>
+        <input type="checkbox" name="informacoes">Novades<br>
+        <input type="checkbox" name="informacoes">Anúncios<br>
+        <input type="checkbox" name="informacoes">Qualquer assunto<br>
+        <br>
+        <label>Comentários</label><br>
+        <textarea class="form-control" name="comentario" cols="70" rows="8" placeholder="Digite aqui seu comentário."></textarea>
+        <br>
+        <button type="reset" class="btn btn-outline-secondary">Limpar</button> <button type="submit" class="btn btn-outline-success">Enviar</button>
+      </fieldset>
+    </form>
+    <p>
+      <center>Para nos mandar informações use esse e-mail: 
+      <div id="email">
+        <a style="cursor: not-allowed;" href="mailto:enollabressanim@gmail.com" rel="nofollow">
+          <code>clique aqui</code>
+        </a>
+      </div>
+    </center>
+  </p>
+  </div>
+
+<footer>
+		<address>Desenvolvido por Enolla Cristine Bressanim, Gabriel Eilers Hiebert, <br>Hannely Thays Maske, Jackson Ricardo Riebe, Mab de Alencar Fraga.</address>
+		<div class="siga"><h3>Siga o Gesundes Leben</h3></div>
+    <img class="redes" src="./images/logotipos.png" usemap="#image-map">
+    <map name="image-map">
+        <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com" coords="21,18,18" shape="circle">
+        <area target="_blank" alt="Twitter" title="Twitter" href="https://www.twitter.com" coords="62,19,18" shape="circle">
+        <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com" coords="103,19,17" shape="circle">
+    </map>
+	</footer>
+</body>
+</html>
